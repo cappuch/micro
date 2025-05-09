@@ -2,6 +2,7 @@
 #define TERMINAL_H
 
 #include "editor.h"
+#include "prototypes.h"
 
 #define ARROW_LEFT 1000
 #define ARROW_RIGHT 1001
@@ -13,12 +14,5 @@
 #define PAGE_UP 1007
 #define PAGE_DOWN 1008
 #define BACKSPACE 127
-
-int getWindowSize(int *rows, int *cols);
-int editorReadKey(void);
-void editorSetStatusMessage(editorConfig *E, const char *fmt, ...);
-void editorDrawStatusBar(editorConfig *E);
-void editorScroll(editorConfig *E);
-void editorDrawRows(editorConfig *E);
 
 #endif

@@ -37,19 +37,14 @@ typedef struct editorConfig {
 } editorConfig;
 
 void editorInit(editorConfig *E);
-int getWindowSize(int *rows, int *cols);
-int editorRowCxToRx(erow *row, int cx);
 void die(const char *s);
-void editorDrawMessageBar(editorConfig *E);
-void editorProcessKeypress(editorConfig *E);
-void editorRefreshScreen(editorConfig *E);
 void editorOpen(editorConfig *E, char *filename);
 void editorSave(editorConfig *E);
 void editorInsertChar(editorConfig *E, int c);
 void editorDelChar(editorConfig *E);
 void editorInsertNewline(editorConfig *E);
 void editorFindCallback(editorConfig *E, char *query, int key);
-int editorReadKey(void);
-void editorSetStatusMessage(editorConfig *E, const char *fmt, ...);
+
+#include "prototypes.h"
 
 #endif

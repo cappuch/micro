@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic -std=c99
 
-SRC = src/main.c src/editor.c src/terminal.c
+SRC = src/main.c src/editor.c src/terminal.c src/input.c
 OBJ = $(SRC:.c=.o)
 TARGET = micro
 
